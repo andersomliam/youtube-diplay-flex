@@ -4,7 +4,7 @@
 header {
     /* border: solid 1px #d1d1d1; */
 
-    min-height: 50px;
+    margin: 0 0 10px;
 
     display: flex;
     flex-flow: row;
@@ -51,12 +51,70 @@ header input {
 }
 
 #foto {
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
 }
 
-.container {
+.container,
+.video,
+.sidebar,
+.bar {
     border: solid 1px #d1d1d1; 
 
+    display: flex;
+}
+
+.container {
+
+    width: 95%;
+    margin: auto;
+
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.video {
+    background-color: aqua;
+
+    flex: 1 1 auto;
+
+    flex-flow: column nowrap;
+}
+
+#video {
+    background-color: brown;
+
+    min-width: 540px;
+    min-height: 540px;
+}
+
+.video h2 {
+    font-size: 1.20rem;
+}
+
+.bar img {
+    object-fit: contain;
+}
+
+.bar {
+    gap: 40px;
+    align-items: center;
+}
+
+.sidebar-video {
+    background-color: aquamarine;
+
+    height: 540px;
+
+    flex: 1 1 15%;
+}
+
+.sidebar-text {
+    background-color: aquamarine;
+
+    flex-flow: column nowrap;
+    flex: 1 1 15%;
+    gap: 10px 0;
 }
